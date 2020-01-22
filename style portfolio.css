@@ -11,6 +11,7 @@ body {
 	width: 1600px;
 	height: 4700px;
 	background-color: #FFFFFF;
+	margin: 0 auto;
 }
 
 #header {
