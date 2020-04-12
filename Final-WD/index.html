@@ -1,0 +1,618 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Mogo</title>
+	<link rel="stylesheet" href="css/style.css">
+	<link rel="stylesheet" href="css/w3.css">
+	<link rel="stylesheet" href="css/owl.carousel.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+</head>
+
+<body>
+	<div id="container">
+		<button onclick="topFunction()" id="myBtn" title="Go to top">Top</button>
+<script>
+//Get the button
+var mybutton = document.getElementById("myBtn");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+    mybutton.style.display = "block";
+  } else {
+    mybutton.style.display = "none";
+  }
+}
+
+// When the user clicks on the button, scroll to the top of the document
+function topFunction() {
+  document.body.scrollTop = 0;
+  document.documentElement.scrollTop = 0;
+}
+</script>
+		<div class="banner">
+			<div class="slideshow-container">
+              <div class="logo">
+				     <img src="Img/logo.png" alt="logo">
+			     </div>
+			
+			     <div class="menu">
+
+				       <ul>
+                  <li><a href="#contact">Contact</a>
+					   <ul>
+                  <li><a href="#contact">Contact</a></li>
+                  <li><a href="#service">Service</a></li>
+                      </ul>
+					  </li>
+				  <li><a href="#blog">Blog</a></li>
+                  <li><a href="#work">Work</a></li>
+			      <li><a href="#services">Services</a></li>
+				 <li><a href="#about">About</a></li>
+               </ul>
+			
+			     </div>
+<div class="mySlides fade">
+  <img src="Img/banner.jpg" alt="banner1">
+	
+    <div class="text">
+	  <i>Creative Template</i>
+	  <h1>WELCOME</h1>
+	  <h1>TO MOGO</h1>
+	</div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Img/banner2.jpg" alt="banner2">
+  <div class="text"><h1>WELCOME</h1>
+	  <h1>TO MOGO</h1></div>
+</div>
+
+<div class="mySlides fade">
+  <img src="Img/banner3.jpg" alt="banner3">
+  <div class="text"><h1>WELCOME</h1>
+	  <h1>TO MOGO</h1></div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+</div>
+
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}    
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";  
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+}
+</script>
+		</div>
+		
+		<div class="about">
+			<div class="content1">
+				<p>What we do</p>
+				<h1>STORY ABOUT US</h1>
+				
+				<div class="content2"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+				
+				<div class="photo">
+					<img id="img2" src="Img/superteam3.jpg" alt="02">
+					<img id="img3" src="Img/superteam4.jpg" alt="03">
+					<img id="myImg" src="Img/superteam.jpg" alt="01" style="width:100%;max-width:380px">
+
+<!-- The Modal -->
+<div id="myModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="img01" alt="01">
+  <div id="caption"></div>
+</div>
+
+<script>
+// Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the image and insert it inside the modal - use its "alt" text as a caption
+var img = document.getElementById("myImg");
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+img.onclick = function(){
+  modal.style.display = "block";
+  modalImg.src = this.src;
+  captionText.innerHTML = this.alt;
+}
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() { 
+  modal.style.display = "none";
+}
+</script>
+
+				</div>
+			</div>
+			<br>
+		</div>
+		
+		<div class="number">
+			    <div class="cover">
+			<div class="box1">
+				<br>
+				<br>
+				<br>
+				<h1>42</h1>
+				<p>WEB DESIGN PROJECT</p>
+			</div>
+			
+			<div class="box2">
+				<br>
+				<br>
+				<br>
+				<h1><span style="font-size:55px;color:white">123</span></h1>
+				<p><span style="font-size:15px;color:white">HAPPY CLIENT</span></p>
+			</div>
+				
+					<div class="box3">
+				<br>
+				<br>
+				<br>
+				<h1><span style="font-size:55px;color:white">15</span></h1>
+				<p><span style="font-size:15px;color:white">ARWARD WINNER</span></p>
+			</div>
+					
+						<div class="box4">
+				<br>
+				<br>
+				<br>
+				<h1><span style="font-size:55px;color:white">99</span></h1>
+				<p><span style="font-size:15px;color:white">CUP OF COFFEE</span></p>
+			</div>
+					
+							<div class="box5">
+				<br>
+				<br>
+				<br>
+				<h1><span style="font-size:55px;color:white">24</span></h1>
+				<p><span style="font-size:15px;color:white">MEMBERS</span></p>
+			</div>
+				</div>
+		</div>
+		
+		<div class="work">
+			<div class="w3-container w3-center w3-animate-top">
+                <p>We work with</p> <br>
+                <h1>AMAZING SERVICES</h1>
+            </div>
+			
+							<center><hr width="200px" size="50px"/></center>
+			<br>
+			
+			<div class="boxicon">
+				<p class="text_column1"> <img src="Img/icon2.png" alt="photography">
+				<b>PHOTOGRAPHY </b> <br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit
+			    </p>
+				
+				<p class="text_column2"> <img src="Img/icon3.png" alt="webdesign">
+				<b>WEB DESIGN</b> <br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit
+			    </p>
+				
+				<p class="text_column3"> <img src="Img/icon4.png" alt="creativity">
+				<b>CREATIVITY</b> <br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit
+				</p>
+				
+				<br> <br> <br> <br> <br>
+				<hr width="100%" size="5px">
+				<br>
+				
+				<p class="text_column4"> <img src="Img/icon5.png" alt="seo">
+				<b>SEO</b> <br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit
+			    </p>
+				
+				<p class="text_column5"> <img src="Img/icon6.png" alt="css">
+				<b>CSS/HTML</b> <br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit
+			    </p>
+				
+				<p class="text_column6"> <img src="Img/icon7.png" alt="digital">
+				<b>DIGITAL</b> <br>
+				Lorem ipsum dolor sit amet, consectetur adipiscing elit
+			    </p>
+				</div>
+			</div>
+		
+		<div class="device">
+			<div class="content5">
+				<p>For all devices</p> <br>
+			    <h1>UNIQUE DESIGN</h1>
+			</div>
+			
+			<div class="phone">
+				<img src="Img/phone.png" alt="phone">
+			</div>
+		</div>
+		
+		<div class="service">
+			<div class="content3">
+				<p>Service</p> <br>
+			    <h1>WHAT WE DO</h1>
+			</div>
+			
+			<br> <br> <br> <br>
+			
+		  <div class="content4">
+			<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+			
+		  <div class="intro">
+				<br>
+				<b>PHOTOGRAPHY</b>
+				<br> <br> <br>
+				<i>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id.</i>
+				<br> <br> <br> <br>
+				<b>CREATIVITY</b>
+				<br> <br> <br> <br>
+				<b>WEB DESIGN</b>
+			</div>
+        </div>
+		
+		<div class="jon">
+			<div class="intro2">
+				<i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</i>
+				<br> <br>
+				<b>Jon Doe</b>
+			</div>
+		</div>
+		
+		<div class="team">
+			<div class="title">
+				<p>Who we are</p> <br>
+			    <h1>MEET OUR TEAM</h1>
+			</div>
+			
+			<br> <br> <br> <br>
+			
+			<div class="content6">
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+			</div>
+			
+			<div class="teamphoto">
+			     <img src="Img/team1.jpg" alt="team1">
+			     <img src="Img/team2.jpg" alt="team2">
+			     <img src="Img/team3.jpg" alt="team3">
+			</div>
+			
+			<div class="name">
+				<div class="name1">
+					<b>MATTHEW DIX</b> <br>
+					<i>Graphic Design</i>
+				</div>
+				
+				<div class="name2">
+					<b>MICHAEL FERTIG</b> <br>
+					<i>Developer</i>
+				</div>
+				
+				<div class="name3">
+					<b>CHRISTOPHER CAMPBELL</b> <br>
+					<i>Branding/UX Design</i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="icon">
+			<div class="owl-carousel owl-theme">
+				
+                <div class="item">
+					<img src="Img/owl1.png" alt="1">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl2.png" alt="2">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl3.png" alt="3">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl4.png" alt="4">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl5.png" alt="5">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl6.png" alt="6">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl1.png" alt="7">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl2.png" alt="8">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl3.png" alt="9">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl4.png" alt="2">
+				</div>
+				
+				<div class="item">
+					<img src="Img/owl5.png" alt="5">
+				</div>
+				
+    			<div class="item">
+					<img src="Img/owl6.png" alt="6">
+				</div>
+				
+            </div>
+		</div>
+		
+		<div class="some">
+			<div class="title2">
+				<p>What we do</p> <br>
+			    <h1>SOME OF OUR WORK</h1>
+				
+				<br> <br> <br>
+				
+				<div class="content7">
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. </p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="artwork">
+			<div class="artwork1">
+				<div class="pic1">
+					<img src="Img/work1.jpg" alt="pic1">
+				</div>
+				
+				<div class="pic2">
+					<img src="Img/work2.jpg" alt="pic2">
+				</div>
+				
+				<div class="pic3">
+					<img src="Img/work3.jpg" alt="pic3">
+				</div>
+				
+				<div class="pic4">
+					<img src="Img/work4.jpg" alt="pic4">
+				</div>
+			</div>
+			
+			<div class="artwork2">
+			</div>
+			
+			<div class="artwork3">
+				<img src="Img/work6.jpg" alt="pic6">
+				<img src="Img/work7.jpg" alt="pic7">
+			</div>
+		</div>
+		
+		<div class="joshua">
+			<div class="shua">
+				<i>“Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.”</i>
+				<br> <br>
+				<b>Joshua Earle</b>
+			</div>
+		</div>
+		
+		<div class="client">
+			<div class="happy">
+				<p>Happy Clients</p> <br>
+			    <h1>WHAT PEOPLE SAY</h1>
+			</div>
+			
+			<div class="say">
+				<div class="say1">
+					<b>MATTHEW DIX</b> <br>
+					<i>Graphic Design</i> <br> <br> <br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+					<br> <br> <br> <br>
+					<b>JAELYNN CASTILLO </b> <br>
+					<i>Graphic Design</i> <br> <br> <br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+				</div>
+				
+				<div class="say2">
+					<b>NICK KARVOUNIS</b> <br>
+					<i>Graphic Design</i> <br> <br> <br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+					<br> <br> <br> <br>
+					<b>MIKE PETRUCCI </b> <br>
+					<i>Graphic Design</i> <br> <br> <br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim.</p>
+				</div>
+			</div>
+		</div>
+		
+		<div class="blog">
+			<div class="title3">
+				<p>Our stories</p> <br>
+			    <h1>LATEST BLOG</h1>
+			</div>
+			
+			<div class="picture">
+				<div class="picture1">
+					<img src="Img/blog1.png" alt="picture1">
+				</div>
+				
+				<div class="picture2">
+					<img src="Img/blog2.png" alt="picture2">
+				</div>
+				
+				<div class="picture3">
+					<img src="Img/blog3.png" alt="picture3">
+				</div>
+			</div>
+			
+			<div class="textblog">
+				<div class="textblog1">
+				    <b>Lorem ipsum dolor sit amet</b> <br> <br>
+				    <p>Consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			    </div>
+				
+				<div class="textblog2">
+				    <b>Sed do eiusmod tempor</b> <br> <br>
+				    <p>Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			    </div>
+				
+				<div class="textblog3">
+				    <b>Incididunt ut labore et dolore</b> <br> <br>
+				    <p>Elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+			    </div>
+			</div>
+			
+			<div class="numberblog">
+				<div class="num1">
+					<i>542</i>
+				</div>
+				
+				<div class="num2">
+					<i>17</i>
+				</div>
+				
+				<div class="num3">
+					<i>992</i>
+				</div>
+				
+				<div class="num4">
+					<i>42</i>
+				</div>
+				
+				<div class="num5">
+					<i>1560</i>
+				</div>
+				
+				<div class="num6">
+					<i>98</i>
+				</div>
+			</div>
+		</div>
+		
+		<div class="map">
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3919.4244704632124!2d106.68783431474894!3d10.778765892319953!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3a9d92c4a7%3A0x6293396afcadc8a5!2zMjEyIE5ndXnhu4VuIMSQw6xuaCBDaGnhu4N1LCBQaMaw4budbmcgNiwgUXXhuq1uIDMsIEjhu5MgQ2jDrSBNaW5oLCBWaeG7h3QgTmFt!5e0!3m2!1svi!2s!4v1586346487730!5m2!1svi!2s" width="1920" height="200" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+		
+		<div class="footer">
+			<div class="total">
+				
+				<div class="total1">
+					<h1>Mogo</h1> <br>
+					<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+					<br>
+					<b>15k followers</b>
+					<hr noshade="noshade" style="color: black">
+					Follow us: <img src="Img/social.png" alt="social">
+					<br> <br>
+					
+					<form action="#">
+						<input type="text" value="Your mail" name="Your mail"> 
+						<button><b>SUBSCRIBE</b></button>
+					</form>
+				</div>
+				
+				<div class="total2">
+					<b>BLOGS</b> <br> <br> <br>
+					<img src="Img/footerblog.png" alt="footer">
+					
+					<div class="linhtinh">
+						<b>LOREM IPSUM  SIT AMET, CONSECTETUR ADIPISCING</b> 
+						<br>
+						<i>Jan 9, 2016</i>
+						<br> <br> <br> <br>
+						<b>LOREM IPSUM  SIT AMET, CONSECTETUR ADIPISCING</b> 
+						<br>
+						<i>Jan 9, 2016</i>
+						<br> <br> <br> <br>
+						<b>LOREM IPSUM  SIT AMET, CONSECTETUR ADIPISCING</b> 
+						<br>
+						<i>Jan 9, 2016</i>
+					</div>
+				</div>
+				
+				<div class="total3">
+					<b>INSTAGRAM</b>
+					<br> <br> <br>
+					<img src="Img/insta.png" alt="insta">
+					<br> <br>
+					<i>View all photos</i>
+				</div>
+			</div>
+			
+			<br>
+			<hr>
+			
+			<div class="credit">
+				<p>© 2016 MoGo free PSD template by <span style="color: red"> Laaqiq </span></p>
+			</div>
+		</div>
+
+		</div>
+	
+	<script src="js/jquery.min.js" type="text/javascript"></script>
+	<script src="js/owl.carousel.js" type="text/javascript"></script>
+	
+	<script type="text/javascript">
+		$('.owl-carousel').owlCarousel({
+    loop:true,
+    margin:10,
+    nav:true,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+})
+	</script>
+	
+</body>
+</html>
