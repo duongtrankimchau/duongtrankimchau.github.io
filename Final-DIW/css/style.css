@@ -21,10 +21,12 @@ body {
 }
 
 .container {
-	width: 1920px;
+	width: 100%;
 	height: 4320px;
 	background-color: #dfdfdd;
 	margin: 0 auto;
+	overflow-y: scroll; 
+    scroll-behavior: smooth;
 }
 
 section#home {
@@ -270,7 +272,7 @@ section#portfolio {
 	text-align: justify;
 	font-family: MontserratThin;
 	float: left;
-	margin-top: -460px;
+	margin-top: -330px;
 	margin-left: 40px;
 }
 
@@ -284,7 +286,7 @@ section#portfolio {
 section#contact {
 	width: 1920px;
 	height: 1080px;
-	background-image: url(../image/Contact.jpg);
+	background-color: #dfdfdd;
 }
 
 .no4 {
@@ -315,6 +317,7 @@ section#contact {
 	text-align: justify;
 	margin-top: -60px;
 	margin-left: 48px;
+	line-height: 30px;
 }
 
 .insta {
