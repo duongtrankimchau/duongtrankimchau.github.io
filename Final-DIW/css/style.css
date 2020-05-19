@@ -25,6 +25,7 @@ body {
 	height: 7000px;
 	width: 100%;
 	overflow: hidden;
+	scroll-behavior: smooth;
 }
 
 .container {
